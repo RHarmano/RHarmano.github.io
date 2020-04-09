@@ -7,7 +7,7 @@
     }
     </style>
     <style>
-        title {color: azure;}
+        title {color: black;}
     </style>
     <head>
         <title>R. Harman's Project Hub</title>
@@ -17,11 +17,16 @@
         {
             text-align: center;
             font-family: Meccanica;
-            color: azure;
+            font-size: large;
+            color: black;
         }
-        p {color: azure;}
+        p 
+        {
+            color: black;
+            background-color: white;
+        }
     </style>
-    <article>
+    <div id="textface">
         <h1>
             Roman's Project Hub
         </h1>
@@ -29,11 +34,15 @@
             Soon some project photos and descriptions will be available for viewing.
         </p>
         <a href="https://www.reddit.com/r/aww/">Maybe puppies are your speed in the meantime?</a>
-    </article>
+    </div>
     <style>
+    #textface
+    {
+        background-color: rgba(255,255,255,0.6);
+    }
     #background
     {
-        width: 100vw; /* take up full width */
+        width: 80vw; /* take up full width */
         height: 100vh; /* take up full height */
         position: fixed; /* don't scroll */
         top: 0; /* place at top of page */
