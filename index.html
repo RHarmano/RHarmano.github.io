@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
     <style>
+    @font-face{
+        font-family: Meccanica;
+        src: url(Meccanica-Regular.woff);
+    }
+    </style>
+    <style>
         title {color: azure;}
     </style>
     <head>
         <title>R. Harman's Project Nexus</title>
     </head>
     <style>
-        h1 {text-align: center;}
+        h1 
+        {
+            text-align: center;
+            font-family: Meccanica;
+        }
     </style>
     <article>
         <h1>
@@ -18,4 +28,19 @@
         </p>
         <a href="https://www.reddit.com/r/aww/">Maybe puppies are your speed?</a>
     </article>
+    <style>
+    #background
+    {
+        width: 100vw; /* take up full width */
+        height: 100vh; /* take up full height */
+        position: fixed; /* don't scroll */
+        top: 0; /* place at top of page */
+        z-index: -99; /* place behind all content */
+        
+        background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQHsZspmgnZbqA/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=LgOIRQF5ioyXoxUl-XWUflVqbIQtTC4yJyINzclVgnQ"); /* use sexy image as background */
+        background-size: cover; /* fill full space */
+        background-position: center;
+    }
+    </style>
+    <div id="background"></div>
 </html>
