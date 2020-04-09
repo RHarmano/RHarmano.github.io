@@ -22,8 +22,8 @@
         }
         p 
         {
+            font-family: Meccanica;
             color: black;
-            background-color: white;
         }
     </style>
     <div id="textface">
@@ -38,6 +38,7 @@
     <style>
     #textface
     {
+        align-items: center;
         background-color: rgba(255,255,255,0.6);
     }
     #background
@@ -49,8 +50,9 @@
         z-index: -99; /* place behind all content */
         
         background-image: url("masterpcb.png"); /* use image as background */
-        background-size: cover; /* fill full space */
+        background-size: contain; /* fill full space */
         background-position: center;
+        align-items: center;
     }
     </style>
     <div id="background"></div>
