@@ -4,73 +4,83 @@
     <script type="text/javascript" src="index.js"></script>
     <!--style formatting for the page-->
     <style>
-        @font-face
-        {
+        @font-face {
             font-family: Meccanica;
             src: url(Meccanica-Regular.woff);
         }
-        title 
-        {
+        @keyframes textfade {
+            0%      {opacity: 0;}
+            100%    {opacity: 1;}
+        }
+        
+        title {
             font-family: Meccanica;
             color: black;
         }
-        .bodyformatting h1
-        {
+        .bodyformatting h1 {
             text-align: center;
             font-family: Meccanica;
             font-size: large;
             color: black;
         }
-        .bodyformatting p, .bodyformatting a
-        {
+        .bodyformatting p, .bodyformatting a {
             font-family: Meccanica;
             color: black;
+
+            animation-name: textfade;
+            animation-duration: 2s;
         }
-        #textborder
-        {
+        #textborder {
             align-items: center;
-            width: 75%;
+            width: 95vw;
+            height: 95vh;
             margin: auto;
+
             background-color: rgba(255, 255, 255, 0.6);
             border: 3px black solid;
         }
-        #textface
-        {
+        #textface {
             align-items: center;
-            width: 75%;
+            width: 85%;
             margin: auto;
-            padding: 2%;
+            padding: 5%;
         }
-        #background
-        {
+        #background {
             width: 100vw; /* take up full width */
             height: 100vh; /* take up full height */
             position: fixed; /* don't scroll */
             top: 0; /* place at top of page */
             z-index: -99; /* place behind all content */
             
-            background-image: url("HighQScrew.PNG"); /* use image as background */
+            background-color: rgb(94, 94, 153); /* use image as background */
             background-size: cover; /* fill full space */
             background-position: center;
+        }
+        .linkclass a{
+            transition: 1s;
+        }
+        .linkclass:hover a{
+            font-size: 7;
         }
     </style>
         <head>
             <title>R. Harman</title>
         </head>
     <div id="background">
-        <div id="textborder" style="margin-top: 12.5%">
+        <div id="textborder" style="margin-top: 2.5%;margin-bottom: 2.5%">
             <div id="textface" class="bodyformatting">
                 <p>
-                    I'm Roman Harman, an engineering physics student
-                    at Queen's University and Electrical Manager at 
-                    the Queen's Fuel Cell Team. This website acts as
-                    a hub to host projects to date.
+                    I'm <font size="5">Roman Harman</font>, 
+                    an engineering physics student.<br><br>
+                    This is what I've been working on.<br><br><br><br>
+                    <div class="linkclass" style="display:inline-block"><a href="https://github.com/RHarmano?tab=repositories">Github</a></div>    
+                    <span style="display:inline-block; width: 5%;"></span>
+                    <div class="linkclass" style="display:inline-block"><a href="https://www.linkedin.com/in/roman-harman-896a6b157/">LinkedIn</a></div>
+                    <span style="display:inline-block; width: 5%;"></span>
+                    <div class="linkclass" style="display:inline-block"><a href="https://www.facebook.com/romano.harman">Facebook</a></div>
                 </p>
-                <a href="https://www.reddit.com/r/aww/">Maybe puppies are your speed in the meantime?</a>
             </div>
-            <div id="textface" class="bodyformatting">
-                
-            </div>
+            <div id="textface" class="bodyformatting"></div>
         </div>
     </div>
 </html>
