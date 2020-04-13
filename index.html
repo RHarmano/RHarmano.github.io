@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html>
+    <!--index.js should be in the directory to call the function-->
     <script type="text/javascript" src="index.js"></script>
+    <!--style formatting for the page-->
     <style>
-    @font-face{
-        font-family: Meccanica;
-        src: url(Meccanica-Regular.woff);
-    }
-    </style>
-    <style>
-        title {color: black;}
-    </style>
-    <head>
-        <title>R. Harman's Project Hub</title>
-    </head>
-    <style>
-        h1 
+        @font-face
+        {
+            font-family: Meccanica;
+            src: url(Meccanica-Regular.woff);
+        }
+        title 
+        {
+            color: black;
+        }
+        .titles 
         {
             text-align: center;
             font-family: Meccanica;
             font-size: large;
             color: black;
         }
-        p,a
+        .bodies
         {
             font-family: Meccanica;
             color: black;
         }
+        #textface
+        {
+            align-items: center;
+            width: 300px;
+            margin: auto;
+            border: 1px solid purple;
+        }
+        #background
+        {
+            width: 100vw; /* take up full width */
+            height: 100vh; /* take up full height */
+            position: fixed; /* don't scroll */
+            top: 0; /* place at top of page */
+            z-index: -99; /* place behind all content */
+            
+            background-image: url("HighQScrew.PNG"); /* use image as background */
+            background-size: cover; /* fill full space */
+            background-position: center;
+        }
     </style>
+    <head>
+        <title>R. Harman's Project Hub</title>
+    </head>
     <div id="textface">
-        <h1>
+        <h1 class="titles">
             Roman's Project Hub
         </h1>
-        <p>
+        <p class="bodies">
             Soon some project photos and descriptions will be available for viewing.
         </p>
         <a href="https://www.reddit.com/r/aww/">Maybe puppies are your speed in the meantime?</a>
     </div>
-    <style>
-    #textface
-    {
-        align-items: center;
-        background-color: rgba(255,255,255,0.75);
-    }
-    #background
-    {
-        width: 100vw; /* take up full width */
-        height: 100vh; /* take up full height */
-        position: fixed; /* don't scroll */
-        top: 0; /* place at top of page */
-        z-index: -99; /* place behind all content */
-        
-        background-image: url("HighQScrew.PNG"); /* use image as background */
-        background-size: cover; /* fill full space */
-        background-position: center;
-    }
-    </style>
     <div id="background"></div>
 </html>
