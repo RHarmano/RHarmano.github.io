@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Meccanica;
+    src: url(Meccanica-Regular.woff);
+}
+@keyframes fadein {
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
+}
+title {
+    font-family: Meccanica;
+    color: black;
+}
+.bodyformatting h1 {
+    font-family: Meccanica;
+    font-size: x-large;
+    color: black;
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+.bodyformatting p, .bodyformatting a {
+    font-family: Meccanica;
+    color: black;
+    font-size: large;
+
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+.headerbanner {
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin: 0px;
+
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0,0,0);
+
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+.infobanner {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+
+    width: 100%;
+    height: 15%;
+    background-color: rgb(0,0,0);
+    z-index: 1;
+
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+.projectcard {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+
+    background-position: center;
+    background-size: cover;
+
+    display: table;
+    display: table;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.projectcard:hover, .projectcard:focus {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.projectcard div {
+    padding: 20px;
+    display: table-cell; vertical-align: middle;
+}
+#cards {
+    width: 100%;
+    margin: 200px 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 250px );
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    color: rgb(255,255,255);
+}
+#textface {
+    width: 75%;
+    margin: 5%;
+    padding: 5%;
+
+    z-index: 1;
+}
+#background {
+    width: 100vw; /* take up full width */
+    height: 100vh; /* take up full height */
+    position: fixed; /* don't scroll */
+    top: 0; /* place at top of page */
+    z-index: -99; /* place behind all content */
+    
+    background-color: rgb(255,255,255); /* use image as background */
+    background-size: cover; /* fill full space */
+    background-position: center;
+}
+#bubbleimg {
+    position: absolute;
+    z-index: 2;
+}
+#textborder {
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px rgb(31, 107, 179);
+    z-index: -2;
+}

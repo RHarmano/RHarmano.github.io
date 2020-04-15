@@ -1,108 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <!--index.js should be in the directory to call the function-->
+<html lang="en">
     <script type="text/javascript" src="index.js"></script>
-    <!--style formatting for the page-->
-    <style>
-        @font-face {
-            font-family: Meccanica;
-            src: url(Meccanica-Regular.woff);
-        }
-        @keyframes fadein {
-            0%      {opacity: 0;}
-            100%    {opacity: 1;}
-        }
-        
-        title {
-            font-family: Meccanica;
-            color: black;
-        }
-        .bodyformatting h1 {
-            font-family: Meccanica;
-            font-size: x-large;
-            color: black;
-
-            animation-name: fadein;
-            animation-duration: 1s;
-        }
-        .bodyformatting p, .bodyformatting a {
-            font-family: Meccanica;
-            color: black;
-            font-size: large;
-
-            animation-name: fadein;
-            animation-duration: 2s;
-        }
-        #textborder {
-            align-items: center;
-            width: 90%;
-            height: 90%;
-            margin: 5%;
-
-            background-color: rgba(255, 255, 255, 0.6);
-            border: 3px rgb(31, 107, 179);
-            z-index: -2;
-        }
-        #headerbanner {
-            position: absolute;
-            top:0px;
-            left:0px;
-            margin: 0px;
-
-            width: 100%;
-            height: 10%;
-            background-color: rgb(0,0,0);
-        }
-        #infobanner {
-            position: absolute;
-            bottom:0px;
-            left:0px;
-
-            width: 100%;
-            height: 15%;
-            background-color: rgb(0,0,0);
-            z-index: 1;
-        }
-        #textface {
-            width: 75%;
-            margin: 5%;
-            padding: 5%;
-
-            z-index: 1;
-        }
-        #background {
-            width: 100vw; /* take up full width */
-            height: 100vh; /* take up full height */
-            position: fixed; /* don't scroll */
-            top: 0; /* place at top of page */
-            z-index: -99; /* place behind all content */
-            
-            background-color: rgb(255,255,255); /* use image as background */
-            background-size: cover; /* fill full space */
-            background-position: center;
-        }
-        #bubbleimg {
-            position: absolute;
-            z-index: 2;
-        }
-        /* .linkclass {
-            display: inline-block;
-            transition: 1s;
-            text-decoration: none;
-            line-height: 125%;
-        }
-        .linkclass:hover a, .linkclass:active a{
-            font-size: 125%;
-        } */
-    </style>
     <head>
         <title>Roman Harman</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=yes">
+        <link href="formatting.css" rel="stylesheet" type="text/css">
     </head>
     <body id="background">
-        <div id="headerbanner">
-            <img src="/Assets/very_temporary_header_graphic.png" class="infobanner" style="border-radius: 50%; max-width: 75px; max-height: 75px; position: absolute; width: 75px; height: 75px;top: 10%; left: 2%">
+        <div class="headerbanner">
+            <h1 style="font-family: Meccanica;color: rgb(255,255,255);">
+                Roman Harman
+            </h1>
         </div>
-        <div id="infobanner">
+        <div class="infobanner">
             <a href="https://github.com/RHarmano?tab=repositories">
                 <img src="/Assets/github_link.jpg" class="bubbleimg" style="border-radius: 50%; max-width: 75px; max-height: 75px; width: 75px; height: 75px; position: absolute; bottom:25%; right:5%;">
             </a>  
@@ -113,15 +24,19 @@
                 <img src="/Assets/facebook_link.png" class="bubbleimg" style="border-radius: 50%; max-width: 75px; max-height: 75px; width: 75px; height: 75px; position: absolute; bottom:25%; right:25%;">
             </a>
         </div>
-        <div id="textborder" style="margin-top: 7.5%;margin-bottom: 25px">
+        <div id="textborder" style="margin-top: 15%;margin-bottom: 25px">
             <div id="textface" class="bodyformatting">
-                <!-- <div id="bubbleimg"><img src="tempID.jpg" alt="ID" style="border-radius: 50%; display: block; max-width: 200px; max-height: 200px; width: auto; height: auto;"></div> -->
-                <h1>
-                    Hi, I'm <font size="5">Roman Harman.</font><br><br>
-                </h1>
                 <p>
                     This is what I've been working on.<br><br><br>
                 </p>
+                <div id="cards">
+                    <a href="https://developer.spotify.com/documentation/web-api/quick-start/" class="projectcard" style="background-image: url(/Assets/spotifyplaylist_creator.png); text-decoration: none; background-size: contain; background-repeat: no-repeat;">
+                        <div class="projectcard">
+                            <h4 style="color: rgb(255,255,255);">Spotify Playlist Creator</h4>
+                            <p style=" color: rgb(255,255,255); font-size: smaller;">An application that takes a seed track in order to create a playlist of recommended songs.</p>
+                        </div>
+                    </a>
+                </div>
             <div id="textface" class="bodyformatting"></div>
         </div>
     </body>
