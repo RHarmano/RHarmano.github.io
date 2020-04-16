@@ -39,7 +39,7 @@ title {
     animation-name: fadein;
     animation-duration: 1s;
 }
-.infobanner {
+#infobanner {
     position: absolute;
     bottom:0px;
     left:0px;
@@ -48,9 +48,23 @@ title {
     height: 15%;
     background-color: rgb(0,0,0);
     z-index: 1;
-
-    animation-name: fadein;
-    animation-duration: 3s;
+}
+.infocard {
+    padding: 20px;
+    display: table;
+    border-radius: 50%;
+    margin: auto;
+    
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.infocard:hover, .infocard:focus {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 .projectcard {
     width: 200px;
@@ -62,7 +76,6 @@ title {
     background-position: center;
     background-size: cover;
 
-    display: table;
     display: table;
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
@@ -76,7 +89,7 @@ title {
     transform: translateY(-10px);
 }
 .projectcard div {
-    padding: 20px;
+    padding: 10px;
     display: table-cell; vertical-align: middle;
 }
 #cards {
@@ -113,10 +126,6 @@ title {
     background-color: rgb(255,255,255); /* use image as background */
     background-size: cover; /* fill full space */
     background-position: center;
-}
-#bubbleimg {
-    position: absolute;
-    z-index: 2;
 }
 #textborder {
     align-items: center;
