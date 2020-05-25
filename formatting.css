@@ -1,108 +1,114 @@
 @font-face {
     font-family: Meccanica;
-    src: url(Meccanica-Regular.woff);
+    src: url(Assets/Meccanica-Regular.woff);
 }
 @keyframes fadein {
     0%      {opacity: 0;}
+    20%     {opacity: 0.2;}
+    40%     {opacity: 0.4;}
+    60%     {opacity: 0.6;}
+    80%     {opacity: 0.8;}
     100%    {opacity: 1;}
 }
-title {
-    font-family: Meccanica;
-    color: black;
+:root {
+    --grey-o: rgb(255,255,240);
+    --borderblend: rgb(0,0,0);
+    --sky-40: rgba(24, 100, 100, 0.4);
+    --sky-60: rgba(46, 121, 121, 0.6);
+    --sky-80: rgba(54, 142, 142, 0.6);
 }
-.bodyformatting h1 {
+html, body {
     font-family: Meccanica;
-    font-size: x-large;
     color: black;
 
-    animation-name: fadein;
-    animation-duration: 1s;
-}
-.bodyformatting p, .bodyformatting a {
-    font-family: Meccanica;
-    color: black;
-    font-size: large;
+    width: 100%; /* take up full width */
+    height: 100%; /* take up full height */
+    position: fixed; /* don't scroll */
+    top: 0; /* place at top of page */
+    z-index: -99; /* place behind all content */
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scrollbar-width: none; /* firefox remove scroll bar */
+    -ms-overflow-style: auto; /* explorer remove scroll bar */
 
-    animation-name: fadein;
-    animation-duration: 2s;
+    background-color: var(--grey-o); /* use image as background */
+    background-size: cover; /* fill full space */
+    background-position: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--sky-60);
+    color: var(--grey-o);
+}
+li {
+    float: left;
+}
+li a { 
+    display: block;
+    color: var(--grey-o);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Meccanica;
+
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease; 
+    transition-duration: 1s;
+}
+li a:hover {
+    background-color: var(--sky-80);
 }
 .headerbanner {
-    position: absolute;
-    top:0px;
-    left:0px;
-    margin: 0px;
-
-    width: 100%;
-    height: 10%;
-    background-color: rgb(0,0,0);
-
-    animation-name: fadein;
-    animation-duration: 1s;
-}
-#infobanner {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    top: 0px;
     left: 0px;
+    margin: auto;
+    padding: 0;
+
     width: 100%;
     height: 10%;
-
-    background-color: rgb(0,0,0);
-    z-index: 1;
 }
-#bannercard {
-    width: 100%;
-    margin: 5px 0;
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, 50px );
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+.titlediv {
+    width: 66vw;
+    margin: auto;
+    padding: 30px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
-    color: rgb(255,255,255);
 }
-.infocard {
-    width: 33%;
-    padding: 50%;
+.textdiv {
+    width: 60vw;
     margin: auto;
-
-    display: table;
-    table-layout: auto;
-    border-radius: 50%;
-
-    background-position: center;
-    background-size: cover;
-    
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.infocard:hover, .infocard:focus {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-.infocard div {
-    padding: 5%;
-    display: table-cell;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .projectcard {
-    width: 75%;
-    height: 50%;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     margin: auto;
     text-align: center;
+    color: var(--grey-o);
 
     background-position: center;
     background-size: cover;
-    overflow: scroll;
 
     display: table;
     -webkit-transition: -webkit-transform 0.3s ease;
@@ -122,10 +128,18 @@ title {
     vertical-align: middle;
 }
 #cards {
-    width: 100%;
-    margin: 200px 0;
+    position: relative;
+    bottom: 10px;
+    width: 66vw;
+    height: 33vw;
+    margin: auto;
+    padding: 30px;
+    display: -moz-grid;
     display: -ms-grid;
     display: grid;
+
+    overflow: visible;
+
     grid-template-columns: repeat( auto-fit, 250px );
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -135,34 +149,5 @@ title {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
-    color: rgb(255,255,255);
-}
-#textface {
-    width: 75vw;
-    margin: 50px;
-    padding: 25px;
-
-    z-index: 1;
-}
-#background {
-    width: 100vw; /* take up full width */
-    height: 100vh; /* take up full height */
-    position: fixed; /* don't scroll */
-    top: 0; /* place at top of page */
-    z-index: -99; /* place behind all content */
-    
-    background-color: rgb(255,255,255); /* use image as background */
-    background-size: cover; /* fill full space */
-    background-position: center;
-}
-#textborder {
-    align-items: center;
-    width: 90%;
-    height: 90%;
-    margin: 5%;
-
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 3px rgb(31, 107, 179);
     z-index: -2;
 }
