@@ -12,6 +12,7 @@
 }
 :root {
     --grey-o: rgb(255,255,240);
+    --grey-15: rgb(15,15,15);
     --borderblend: rgb(0,0,0);
     --sky-40: rgba(24, 100, 100, 0.4);
     --sky-60: rgba(46, 121, 121, 0.6);
@@ -117,7 +118,8 @@ li a:hover {
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    color: var(--grey-o);
+    background-color: rgba(255,255,255,0.5);
+    color: var(--grey-15);
 
     background-position: center;
     background-size: cover;
