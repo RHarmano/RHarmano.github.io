@@ -8,28 +8,35 @@
         <link href="formatting.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class='static-container'>
-            <div class='headerbanner'>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li style="float:right;"><a href="https://github.com/RHarmano?tab=repositories" target="_blank">GitHub</a></li>
-                    <li style="float:right;"><a href="https://www.linkedin.com/in/roman-harman-896a6b157/" target="_blank">LinkedIn</a></li>
-                    <li style="float:right;"><a href="https://www.facebook.com/romano.harman" target="_blank">Facebook</a></li>
-                </ul>
-            </div>
-            <div class='titlediv'>
-                <h1>
-                    Welcome,
-                </h1>
-                <div class='textdiv'>
-                    <p>
-                        Direct links to my projects may be found in the corresponding cards below. 
-                        Links to various social media accounts may be accessed in the top bar.
-                        A bit about me may be found in the About tab.
-                    </p>
-                </div>
-            </div>
+        <div class='headerbanner'>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li style="float:right;"><a href="https://github.com/RHarmano?tab=repositories" target="_blank">GitHub</a></li>
+                <li style="float:right;"><a href="https://www.linkedin.com/in/roman-harman-896a6b157/" target="_blank">LinkedIn</a></li>
+                <li style="float:right;"><a href="https://www.facebook.com/romano.harman" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+        <div class='profileblock'>
+            <table style='width: inherit;'>
+                <td style='width: 25%; display: table-cell; vertical-align: middle;'>
+                    <a href="/about.html">
+                        <img src="assets/profile.jpg" alt="Profile Image" style='border-radius: 50%; max-width: 250px; max-height: 250px; display: table-cell'>
+                    </a>
+                </td>
+                <td style='width: 75%;'>
+                    <div class='titlediv'>
+                        <h1>
+                            Hi, I'm Roman.
+                        </h1>
+                        <div class='textdiv'>
+                            <p>
+                                I'm an engineering physics student, but software engineering and mechatronics are big parts of what I do. Some examples of projects I have done may be found below. Clicking on any of them takes you to their GitHub repository.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </table>
         </div>
         <div id="cards">
             <a href="https://github.com/RHarmano/dog-fight" 
@@ -54,8 +61,7 @@
                         Spotify Playlist Creator
                     </h4>
                     <p>
-                        An application that takes a seed track in order to create a playlist of recommended songs 
-                        (Currently in the process of recovery).
+                        An application that takes a seed track in order to create a playlist of recommended songs.
                     </p>
                 </div>
             </a>
@@ -95,10 +101,10 @@
                 background-repeat: no-repeat;">
                 <div class="projectcard">
                     <h4>
-                        QFCT
+                        Fuel Cell Controller
                     </h4>
                     <p>
-                        The Queen's Fuel Cell Team creates vehicles using the power of hydrogen fuel cells, subdivided into electrical, mechanical and chemical teams.
+                        An automated self-contained controller to monitor the safe operation of a hydrogen fuel cell.
                     </p>
                 </div>
             </a>
