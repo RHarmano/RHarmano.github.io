@@ -103,10 +103,9 @@ li a {
     display: inline-block;
     margin: 48px 0px 15px 0px;;
     padding: 0px;
-    border-bottom: 3px solid var(--grey-15);
+    border-bottom: 1px solid var(--grey-15);
 }
 .titlediv {
-    float: left;
     width: 1000px;
     margin: auto;
     padding: 0px;
@@ -130,6 +129,8 @@ li a {
     justify-content: center;
     transition: ease-in 1s;
 }
+#infotitle { margin: 96px auto 48px auto; }
+#infotext { margin: auto; }
 .static-container {
     position: sticky;
     position: -webkit-sticky;
