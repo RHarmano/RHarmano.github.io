@@ -18,16 +18,16 @@
             }
 }
 :root {
-    --grey-o: rgb(255,255,240);
+    --grey-o: rgb(248, 248, 244);
     --grey-15: rgb(15,15,15);
     --borderblend: rgb(0,0,0);
-    --sky-40: rgb(24, 100, 100);
-    --sky-60: rgb(46, 121, 121);
-    --sky-80: rgb(54, 142, 142);
+    --sky-40: rgb(92, 131, 131);
+    --sky-60: rgb(146, 180, 180);
+    --sky-80: rgb(198, 218, 218);
 }
 html, body {
     font-family: Meccanica;
-    color: black;
+    color: var(--grey-15);
 
     width: 100%; /* take up full width */
     height: 100%; /* take up full height */
@@ -55,7 +55,6 @@ ul {
 }
 .headerbanner ul {
     background-color: var(--sky-80);
-    color: var(--grey-o);
 }
 li {
     float: left;
@@ -67,6 +66,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     font-family: Meccanica;
+    color: var(--grey-15);
 
     -webkit-transition: all 1s ease; 
     -moz-transition: all 1s ease; 
@@ -78,7 +78,7 @@ li a {
 .headerbanner li a { 
     vertical-align: middle;
     text-align: center;
-    color: var(--grey-o);
+    color: var(--grey-15);
 }
 .headerbanner li a:hover {
     vertical-align: middle;
@@ -94,15 +94,16 @@ li a {
     z-index: 99;
 
     width: 100%;
-    height: auto;
+    height: 48px;
 }
 .profileblock {
     width: 100%;
-    height: auto;
+    height: 265px;
     position: sticky;
     display: inline-block;
-    margin: 60px 60px 0px 0px;;
-    padding: 0;
+    margin: 48px 0px 15px 0px;;
+    padding: 0px;
+    border-bottom: 3px solid var(--grey-15);
 }
 .titlediv {
     float: left;
@@ -138,7 +139,7 @@ li a {
     padding: 0;
 
     width: 100vw;
-    height: auto;
+    height: 313px;
     background-color: var(--grey-o);
 }
 .projectcard {
@@ -147,7 +148,6 @@ li a {
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    background-color: rgba(255,255,255,0.5);
     color: var(--grey-15);
 
     background-position: center;
