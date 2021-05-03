@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="text/javascript" src="index.js"></script>
     <head>
-        <title>Projects</title>
+        <title>Roman Harman</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
         <link href="formatting.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class='headerbanner'>
+        <div class='headerbanner' id='headerformatting'>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -17,27 +16,18 @@
                 <li style="float:right;"><a href="https://www.facebook.com/romano.harman" target="_blank">Facebook</a></li>
             </ul>
         </div>
-        <div class='static-container'>
-            <div class='profileblock'>
-                <table style='width: inherit;'>
-                    <td align='center' style='width: 25%; display: table-cell;'>
-                        <a href="/about.html">
-                            <img src="assets/profile.jpg" alt="Profile Image" style='opacity: 0.75; border-radius: 50%; border: 1px solid var(--grey-15); max-width: 250px; max-height: 250px; display: table-cell; margin: auto; text-align: center;'>
-                        </a>
-                    </td>
-                    <td style='width: 75%;'>
-                        <div class='titlediv' style='float: left;'>
-                            <h1>
-                                Hi, I'm Roman.
-                            </h1>
-                            <div class='textdiv'>
-                                <p>
-                                    I'm an engineering physics student, but software engineering and mechatronics are big parts of what I do. Some examples of projects I have done may be found below. Clicking on any of the cards takes you to their respective GitHub repository.
-                                </p>
-                            </div>
-                        </div>
-                    </td>
-                </table>
+        <div class='profileblock' id='about'>
+            <div class='titlediv'>
+                <h1>
+                    Hi, I'm Roman.
+                </h1>
+                <div class='textdiv'>
+                    <p>
+                        I'm an engineer with a background in physics and mechatronics, but I have a passion for uniting the fields of computer science 
+                        and engineering. Projects surrounding quantum physics, fluid mechanics, mechatronics and astrophysics may be found on my GitHub
+                        or by clicking the cards below.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="cards">
@@ -122,4 +112,5 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript" src="script.js"></script>
 </html>
